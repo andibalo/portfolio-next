@@ -1,11 +1,13 @@
 import React from "react";
 import Header from "./Header";
 
-const BaseLayout = ({ children }) => {
+const BaseLayout = ({ className, children }) => {
   return (
-    <div>
+    <div className="layout-container">
       <Header />
-      {children}
+      <main className={`cover ${className}`}>
+        <div className="wrapper">{children}</div>
+      </main>
     </div>
   );
 };

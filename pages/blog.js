@@ -1,10 +1,13 @@
 import React from "react";
 import BaseLayout from "../components/BaseLayout";
+import BasePage from "../components/BasePage";
 
 const Blog = (props) => {
   return (
     <BaseLayout>
-      <h1>Blog</h1>
+      <BasePage>
+        <h1>Blog</h1>
+      </BasePage>
     </BaseLayout>
   );
 };

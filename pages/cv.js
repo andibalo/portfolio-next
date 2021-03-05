@@ -1,10 +1,12 @@
 import React from "react";
 import BaseLayout from "../components/BaseLayout";
-
+import BasePage from "../components/BasePage";
 const Cv = (props) => {
   return (
     <BaseLayout>
-      <h1>Cv</h1>
+      <BasePage>
+        <h1>Cv</h1>
+      </BasePage>
     </BaseLayout>
   );
 };
