@@ -29,7 +29,7 @@ const Header = (props) => {
 
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
-          <Nav className="me-auto" navbar>
+          <Nav className="mr-auto" navbar>
             <NavItem className="port-navbar-item">
               <Link href="/">
                 <a className="nav-link port-navbar-link">Home</a>
@@ -54,6 +54,16 @@ const Header = (props) => {
               <Link href="/cv">
                 <a className="nav-link port-navbar-link">CV</a>
               </Link>
+            </NavItem>
+          </Nav>
+          <Nav navbar>
+            <NavItem className="port-navbar-item">
+              <span className="nav-link port-navbar-link clickable">Login</span>
+            </NavItem>
+            <NavItem className="port-navbar-item">
+              <span className="nav-link port-navbar-link clickable">
+                Logout
+              </span>
             </NavItem>
           </Nav>
         </Collapse>
